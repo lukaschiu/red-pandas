@@ -1,9 +1,4 @@
-# Yet Another "Visited Places" Map
-
-This is a simple local web application which allows to visualize countries
-and places (cities, etc.) you have visited during travels.
-
-There are gazillion of apps like that, here are the traits of this one:
+# A map of Red Pandas in Zoos in the US.
 
  * Leaflet-based map with free-forever OpenStreetMap tiles
  * No server-side code, just static HTML+JS+CSS
