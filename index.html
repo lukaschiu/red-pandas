@@ -6,25 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Test</title>
+    <title>Red Pandas Map</title>
     <meta name="description" content="Test page">
     <style class="anchorjs"></style><link rel="stylesheet" href="./main.css" media="screen">
+    <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="/lib/http_unpkg.com_leaflet@1.9.4_dist_leaflet.css" />
     <script src="/lib/http_unpkg.com_leaflet@1.9.4_dist_leaflet.js"></script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Sankofa+Display&display=swap" rel="stylesheet">
+    
     <style>
-        #map { height: 84.5vh; }
+        #map { height: 87vh; }
         .leaflet-container { font-size: 1.4rem; }
     </style>
 </head>
 <body>
 
+    <p class="title">Red Pandas in the US (in Zoos)</p>
     <div id="map" style="position: relative;"></div>
 
     <script src="places/countries.js"></script>
     <script src="places/cities.js"></script>
 
     <script src="layers/countries.geojson.js"></script>
+
 
     <script>
         var map = L
@@ -58,7 +65,7 @@
                         color: 'transparent'
                     })
 
-                    layer.bindTooltip(`${feature.properties.ADMIN} (Visited)`, {
+                    layer.bindTooltip(`${feature.properties.ADMIN}`, {
                         permanent: false,
                         className: 'country-label',
                         sticky: true,
@@ -130,9 +137,9 @@
                 })
                     .bindPopup(`
                 <p><strong>${city.name}</strong></p>
-                <p> Visited on ${dateStr}</p>
+                <p>Has Red Pandas</p>
                 `)
-                    .bindTooltip(`${city.name} (Visited)`, {
+                    .bindTooltip(`${city.name} (Has Red Pandas)`, {
                         permanent: false,
                         className: 'city-label',
                         sticky: true,
@@ -190,4 +197,6 @@
          */
 
     </script>
+
+    <a class="source" href="https://github.com/lukaschiu/visited-places" target="_blank">Github Source</a>
 </body>
