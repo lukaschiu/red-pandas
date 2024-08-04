@@ -3,6 +3,7 @@
    //{name: 'Rochester', latitude: 43.155708, longitude: -77.612549, radius: 3, fillKey: 'city', date: 'August 2017, August 2021; November 2022, September 2023'},
    {name: 'San Diego Zoo', latitude: 32.73604429846425, longitude: -117.15098490378837, radius: 3, fillKey: 'city', date: ''},
    {name: 'San Francisco Zoo', latitude: 37.733075134017014, longitude: -122.50285626123953, radius: 3, fillKey: 'city', date: ''},
+   {name: 'Santa Barbara Zoo', latitude: 34.42051150410856, longitude: -119.66705228465764, radius: 3, fillKey: 'city', date: ''},
    {name: 'Beardsley Zoo', latitude: 41.209788213320955, longitude: -73.18206833038624, radius: 3, fillKey: 'city', date: ''},
    {name: 'Brandywine Zoo', latitude: 39.756082448218116, longitude: -75.54962915929386, radius: 3, fillKey: 'city', date: ''},
    {name: 'Zoo Atlanta', latitude: 33.73265843083447, longitude: -84.37143654607542, radius: 3, fillKey: 'city', date: ''},
